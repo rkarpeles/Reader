@@ -260,7 +260,7 @@ nav {
 }
 
 nav ul { 
-	float: left;
+	margin: 0 auto;
 	width: auto;
 	height: 52px;	
 }
@@ -275,15 +275,14 @@ nav li a {
 	color: #fff;
 	background: none;
 	padding: 20px;
-	transition: all 0.2s ease-in-out;
-	-webkit-transition: all 0.2s ease-in-out; 
-	-moz-transition: all 0.2s ease-in-out;	
+	transition: all 0.15s ease-in-out;
+	-webkit-transition: all 0.15s ease-in-out; 
+	-moz-transition: all 0.15s ease-in-out;	
 }
-
 
 nav li a:hover {
 	background-color: #f7f7f7;
-	color: #2db5b5;
+	color: #2db5b5;	
 }
 
 
