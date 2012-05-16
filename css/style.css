@@ -36,6 +36,7 @@ html, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
 body { margin: 0; font-size: 1em; line-height: 1.4; }
 
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection declarations have to be separate
@@ -215,7 +216,7 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author:
+   Author: Ryan Karpeles
    ========================================================================== */
 
 
@@ -223,13 +224,52 @@ td { vertical-align: top; }
 /* ! Layout for desktop version   */
 /* ============================== */
 
+/* Reusable Styles////////////////////////
+
+FONTS
+
+Lato	 				font-family: 'Lato', Helvetica, Arial, sans-serif;
+Lora					font-family: 'Lora', Georgia, serif;
+
+COLORS
+bright blue				#2db5b5
+burnt sienna			#b66f2d
+sea green				#46a167
+hot fusia				#bd2c66
+dark gray				#333
+medium gray				#666
+light gray				#999
+super light gray		#d0d0d0
+
+*/
+
 body {
+	background: #fff url(../img/bg-dots.png) repeat;	 
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	color: #666;
+}
+
+nav {
+	background: #2db5b5;
 	color: #fff;	
+	display: block;
+	position: relative;	
 }
+
+nav ul { 
+	padding: 15px 0px;	
+}
+
+nav ul > li {
+	display: inline;
+	padding-right: 25px;
+}
+
+
+
+
 	
-.container p {
-	background: black;
-}
+
 	
 
 /* ============================= */
@@ -361,8 +401,7 @@ img {
 @media only screen and (max-width: 1023px) {
 
 	body {
-	font-size: 0.8em;
-	line-height: 1.5em;
+	
 	}
 	
 	}
@@ -373,7 +412,6 @@ img {
 @media handheld, only screen and (max-width: 767px) {
 
 	body {
-	font-size: 16px;
 	-webkit-text-size-adjust: none;
 	}
 	

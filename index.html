@@ -5,8 +5,12 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
 <head>
   <meta charset="utf-8">
+  
+  <!-- Google Web Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Lora:400,700,400italic' rel='stylesheet' type='text/css'>
 
   <!-- Use the .htaccess and remove these lines to avoid edge case issues.
        More info: h5bp.com/i/378 -->
@@ -17,10 +21,14 @@
 
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
   <meta name="viewport" content="width=device-width">
+  
+  <!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
   <link rel="stylesheet" href="css/style.css">
+ 
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
@@ -34,73 +42,36 @@
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <header>
-
+	
+	<nav role="navigation">
+		<div class="container">
+			<div class="row">
+				<ul>
+					<li>Home</li>
+					<li>Patient Info</li>
+					<li>Treatments</li>
+					<li>Meet Dr. Reader</li>
+					<li>Happy Patients</li>
+					<li>Dental Health</li>
+					<li>Make an Appointment</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
   </header>
+  
   <div role="main">
   
 		<div class="container">
 			<div class="row">
-				<div class="onecol">
-					<p>One</p>
-				</div>
-				<div class="onecol">
-					<p>One</p>
-				</div>
-				<div class="onecol">
-					<p>One</p>
-				</div>
-				<div class="onecol">
-					<p>One</p>
-				</div>
-				<div class="onecol">
-					<p>One</p>
-				</div>
-				<div class="onecol">
-					<p>One</p>
-				</div>
-				<div class="onecol">
-					<p>One</p>
-				</div>
-				<div class="onecol">
-					<p>One</p>
-				</div>
-				<div class="onecol">
-					<p>One</p>
-				</div>
-				<div class="onecol">
-					<p>One</p>
-				</div>
-				<div class="onecol">
-					<p>One</p>
-				</div>
-				<div class="onecol last">
-					<p>One</p>
-				</div>
+				<div class="twelvecol">
+					<p>Personal, comfortable, affordable care for you and your family.</p>
+				</div>				
 			</div>
 		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="twocol">
-					<p>Two columns</p>
-				</div>
-				<div class="twocol">
-					<p>Two columns</p>
-				</div>
-				<div class="twocol">
-					<p>Two columns</p>
-				</div>
-				<div class="twocol">
-					<p>Two columns</p>
-				</div>
-				<div class="twocol">
-					<p>Two columns</p>
-				</div>
-				<div class="twocol last">
-					<p>Two columns</p>
-				</div>
-			</div>
-		</div>
+  
+		
 
 		<div class="container">
 			<div class="row">
@@ -133,38 +104,7 @@
 			</div>
 		</div>
 
-		<div class="container">
-			<div class="row">
-				<div class="onecol">
-					<p>One</p>
-				</div>
-				<div class="elevencol last">
-					<p>Eleven columns</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="twocol">
-					<p>Two columns</p>
-				</div>
-				<div class="tencol last">
-					<p>Ten columns</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="threecol">
-					<p>Three columns</p>
-				</div>
-				<div class="ninecol last">
-					<p>Nine columns</p>
-				</div>
-			</div>
-		</div>
+		
 
 		<div class="container">
 			<div class="row">
@@ -177,17 +117,7 @@
 			</div>
 		</div>
 
-		<div class="container">
-			<div class="row">
-				<div class="fivecol">
-					<p>Five columns</p>
-				</div>
-				<div class="sevencol last">
-					<p>Seven columns</p>
-				</div>
-			</div>
-		</div>
-
+		
 		<div class="container">
 			<div class="row">
 				<div class="sixcol">
@@ -199,16 +129,7 @@
 			</div>
 		</div>
 
-		<div class="container">
-			<div class="row">
-				<div class="sevencol">
-					<p>Seven columns</p>
-				</div>
-				<div class="fivecol last">
-					<p>Five columns</p>
-				</div>
-			</div>
-		</div>
+		
 
 		<div class="container">
 			<div class="row">
@@ -219,54 +140,7 @@
 					<p>Four columns</p>
 				</div>
 			</div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="ninecol">
-					<p>Nine columns</p>
-				</div>
-				<div class="threecol last">
-					<p>Three columns</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="tencol">
-					<p>Ten columns</p>
-				</div>
-				<div class="twocol last">
-					<p>Two columns</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="elevencol">
-					<p>Eleven columns</p>
-				</div>
-				<div class="onecol last">
-					<p>One</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="threecol">
-					<p>Three columns</p>
-				</div>
-				<div class="sixcol">
-					<p>Six columns</p>
-				</div>
-				<div class="threecol last">
-					<p>Three columns</p>
-				</div>
-			</div>
-		</div>
+		</div>	
 	
 	
 
