@@ -51,9 +51,8 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
    Links
    ========================================================================== */
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
-a:hover { color: #06e; }
+a { color: #2db5b5; text-decoration: none; }
+a:hover { text-decoration: none; }
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -257,12 +256,28 @@ nav {
 }
 
 nav ul { 
-	padding: 15px 0px;	
+	float: left;
+	width: auto;
+	height: 52px;	
 }
 
-nav ul > li {
-	display: inline;
-	padding-right: 25px;
+nav li {
+	display: inline-block;	
+	padding-top: 14px;
+}
+
+
+nav li a {	
+	color: #fff;
+	background: none;
+	transition: all 0.2s ease-in-out;
+	padding: 20px;
+}
+
+
+nav li a:hover {
+	background-color: #f7f7f7;
+	color: #2db5b5;
 }
 
 
