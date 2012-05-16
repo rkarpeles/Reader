@@ -248,6 +248,10 @@ body {
 	color: #666;
 }
 
+header {
+	height: 79px;
+}
+
 nav {
 	background: #2db5b5;
 	color: #fff;	
@@ -270,8 +274,10 @@ nav li {
 nav li a {	
 	color: #fff;
 	background: none;
-	transition: all 0.2s ease-in-out;
 	padding: 20px;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out; 
+	-moz-transition: all 0.2s ease-in-out;	
 }
 
 
