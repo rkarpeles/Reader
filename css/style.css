@@ -51,7 +51,14 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
    Links
    ========================================================================== */
 
-a { color: #2db5b5; text-decoration: none; }
+a { 
+	color: #2db5b5; 
+	text-decoration: none;
+	transition: all 0.15s ease-in-out;
+	-webkit-transition: all 0.15s ease-in-out; 
+	-moz-transition: all 0.15s ease-in-out;	
+}
+
 a:hover { text-decoration: none; }
 a:focus { outline: thin dotted; }
 
@@ -100,7 +107,7 @@ sub { bottom: -0.25em; }
 
 ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
 dd { margin: 0 0 0 40px; }
-nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+nav ul, nav ol, footer ul { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 
 
 /* =============================================================================
@@ -248,6 +255,10 @@ body {
 	color: #666;
 }
 
+/*===========================
+HEADER
+===========================*/
+
 header {
 	height: 50px;
 	padding: 15px 0;
@@ -260,6 +271,10 @@ header {
 	color: #2db5b5;	
 	text-decoration: none;	
 	line-height: 1.7;
+}
+
+#headLogo a:hover {
+	color: #bd2c66;
 }
 
 #headAddress {
@@ -283,12 +298,16 @@ header {
 	content: "";	
 }
 
+/*===========================
+NAVIGATION
+===========================*/
+
 nav {
 	background: #2db5b5;
 	color: #fff;	
 	display: block;
 	position: relative;	
-	text-align: center;
+	text-align: center;	
 }
 
 nav ul { 
@@ -316,6 +335,24 @@ nav li a:hover {
 	background-color: #f7f7f7;
 	color: #2db5b5;	
 }
+
+
+/*===========================
+FOOTER 
+===========================*/
+
+footer {
+	background: #2db5b5;
+	color: #fff;
+	font-size: 0.9em;
+	padding-bottom: 20px;
+}
+
+.footerStrong {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
 
 
 /* ==================================================================================================================== */
@@ -517,6 +554,8 @@ img {
 	padding-right: 20px;
 	}	
 	
+	
+	
 }
 
 
@@ -527,6 +566,7 @@ img {
 		width: 100%;
 		border-bottom: 1px solid #f7f7f7;
 	}
+	
 	
 		
 	}
