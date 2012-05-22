@@ -257,24 +257,25 @@ nav {
 	color: #fff;	
 	display: block;
 	position: relative;	
+	text-align: center;
 }
 
 nav ul { 
-	margin: 0 auto;
-	width: auto;
-	height: 52px;	
+	float: left;
+	width: 100%;	
 }
 
 nav li {
 	display: inline-block;	
-	padding-top: 14px;
 }
 
 
 nav li a {	
 	color: #fff;
 	background: none;
-	padding: 20px;
+	padding: 20px 30px;
+	display: block;
+	position: relative;
 	transition: all 0.15s ease-in-out;
 	-webkit-transition: all 0.15s ease-in-out; 
 	-moz-transition: all 0.15s ease-in-out;	
@@ -285,51 +286,6 @@ nav li a:hover {
 	color: #2db5b5;	
 }
 
-
-
-
-	
-
-	
-
-/* ============================= */
-/* ! Layout for mobile version   */
-/* ============================= */
-
-@media handheld, only screen and (max-width: 767px) {
-
-	body {
-		
-	}
-
-}
-
-
-/* ========================================== */
-/* ! Provide higher res assets for iPhone 4   */
-/* ========================================== */
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
-
-/*	.logo {
-		background: url(logo2x.jpg) no-repeat;
-		background-size: 212px 303px;
-	}*/
-
-}
-
-
-
-
-/* ==|== media queries ======================================================
-   EXAMPLE Media Query for Responsive Design.
-   This example overrides the primary ('mobile first') styles
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
 
 /* ==================================================================================================================== */
 /* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
@@ -418,16 +374,36 @@ img {
 
 /* Smaller screens */
 
+@media only screen and (max-width: 1200px) {
+
+		
+	nav li a {
+		padding: 20px;		
+	}
+	
+	}
+	
+	
 @media only screen and (max-width: 1023px) {
 
 	body {
+		
+	}	
 	
+		
+	nav li a {
+		padding: 20px 15px;
+		
 	}
+	
+	
 	
 	}
 
 
-/* Mobile */
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
 
 @media handheld, only screen and (max-width: 767px) {
 
@@ -451,8 +427,34 @@ img {
 	margin-right: 0px;
 	padding-left: 20px;
 	padding-right: 20px;
-	}
+	}	
+	
+}
 
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}
+
+
+/* ==|== media queries ======================================================
+   EXAMPLE Media Query for Responsive Design.
+   This example overrides the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
 }
 
 
