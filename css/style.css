@@ -274,7 +274,13 @@ header {
 	font-weight: bold;
 	color: #2db5b5;	
 	line-height: 2.3;
-	text-align: right;
+	text-align: right;		
+}
+
+#headPhone:before {
+	background: url(../img/bell.png) 10px 14px no-repeat;
+	padding: 20px;
+	content: "";	
 }
 
 nav {
@@ -416,6 +422,12 @@ img {
 		height: auto;	
 	}	
 	
+	#headPhone:before {
+	background: url(../img/bell.png) 10px 13px no-repeat;
+	padding: 20px;
+	content: "";	
+	}
+	
 	nav li:first-child {
 		display:none; 
 	}
@@ -468,7 +480,11 @@ img {
 		text-align: left;
 		line-height: 1.7;
 		font-size: 1.2em;
-		color: #999;
+		color: #b4b4b4;
+	}
+	
+	#headPhone:before {
+		display: none;
 	}
 	
 	nav {
