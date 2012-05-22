@@ -252,6 +252,18 @@ header {
 	height: 79px;
 }
 
+#logo {
+	margin: 18px 0 0;	
+}
+
+#logo a {
+	font-family: 'Lora', Georgia, serif;
+	font-size: 1.8em;
+	font-weight: bold;
+	color: #2db5b5;	
+	text-decoration: none;	
+}
+
 nav {
 	background: #2db5b5;
 	color: #fff;	
