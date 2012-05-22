@@ -249,19 +249,32 @@ body {
 }
 
 header {
-	height: 79px;
+	height: 50px;
+	padding: 15px 0;
 }
 
-#logo {
-	margin: 18px 0 0;	
-}
-
-#logo a {
+#headLogo a {
 	font-family: 'Lora', Georgia, serif;
-	font-size: 1.8em;
+	font-size: 1.75em;
 	font-weight: bold;
 	color: #2db5b5;	
 	text-decoration: none;	
+	line-height: 1.7;
+}
+
+#headAddress {
+	text-align: center;
+	font-size: 0.9em;
+	color: #d0d0d0;
+	padding-top: 5px;
+}
+
+#headPhone {
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #2db5b5;	
+	line-height: 2.3;
+	text-align: right;
 }
 
 nav {
@@ -399,6 +412,10 @@ img {
 @media only screen and (max-width: 1023px) {
 
 		
+	header {
+		height: auto;	
+	}	
+	
 	nav li:first-child {
 		display:none; 
 	}
@@ -414,7 +431,8 @@ img {
 
 	body {
 		font-size: 0.9em;		
-	}			
+	}	
+
 	
 	nav li:first-child {
 		display:none; 
@@ -436,6 +454,21 @@ img {
 
 	body {
 	-webkit-text-size-adjust: none;
+	}
+	
+	#headLogo a {
+		line-height: 1;
+	}
+	
+	#headAddress {
+		text-align: left;
+	}
+	
+	#headPhone {
+		text-align: left;
+		line-height: 1.7;
+		font-size: 1.2em;
+		color: #999;
 	}
 	
 	nav {
