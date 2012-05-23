@@ -43,8 +43,8 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #bd2c66; color: #fff; text-shadow: none; }
+::selection { background: #bd2c66; color: #fff; text-shadow: none; }
 
 
 /* =============================================================================
@@ -278,11 +278,27 @@ body {
 
 img {
 	background: #fff;
-	padding: 5px;
-	margin: 5px;
+	padding: 1%;
+	margin: 1%;	
 	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);	
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.callout {
+	background: #fff;
+	max-width: 96%;
+	max-height: 343px;	
+	margin: 2%;		
+	font-size: 1.2em;
+	line-height: 1.5;
+	padding: 10px 40px;
+	color: #b66f2d;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-style: italic;
+	-webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
 }
 
 /*===========================
@@ -462,7 +478,7 @@ margin-right: 0px;
 }
 
 img, object, embed {
-max-width: 100%;
+max-width: 96%;
 }
 
 img {
@@ -511,6 +527,10 @@ img {
 	body {
 		font-size: 0.9em;		
 	}	
+	
+	.mega {
+	font-size: 3.4em;	
+	}
 
 	
 	nav li:first-child {
@@ -533,6 +553,12 @@ img {
 
 	body {
 	-webkit-text-size-adjust: none;
+	}
+	
+	.mega {
+	font-size: 2.8em;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	}
 	
 	#headLogo a {
@@ -595,6 +621,10 @@ img {
 	nav li {
 		width: 100%;
 		border-bottom: 1px solid #f7f7f7;
+	}
+	
+	.mega {
+	font-size: 2.2em;
 	}
 	
 	
@@ -669,7 +699,7 @@ img {
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
   thead { display: table-header-group; } /* h5bp.com/t */
   tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
+  img { max-width: 96% !important; }
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
