@@ -316,7 +316,7 @@ CUSTOM STYLES
 }
 
 
-.tab {
+.tabOne {
 	z-index: 100;
 	background: #bd2c66;
 	opacity: 0.9;
@@ -335,7 +335,7 @@ CUSTOM STYLES
 }
 
 
-.tab:hover {
+.tabOne:hover {
 	background: #2db5b5;
 	cursor: pointer;	
 	padding-right: 45px;
@@ -644,6 +644,11 @@ img {
 		display: none;
 	}
 	
+/* ========================
+RESPONSIVE COLUMNS
+=========================*/
+			
+		
 	.row, body, .container {
 	width: 100%;
 	min-width: 0;
@@ -679,6 +684,11 @@ img {
 	font-size: 2.2em;
 	}
 	
+	.tabOne {
+		padding: 5px 15px;
+		top: 75%;
+		right: 2.5%;
+	}
 	
 		
 	}
