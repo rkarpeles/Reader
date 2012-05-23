@@ -516,9 +516,14 @@ img {
 	}
 		
 	nav li a {
-		padding: 20px;				
-	}	
+		padding: 20px;	
+	}
 	
+	.callout {
+		font-size: 1.1em;
+	}
+
+			
 	
 	}
 	
@@ -590,6 +595,10 @@ img {
 	
 	nav li a {
 		padding: 10px 20px;
+	}
+	
+	.callout {
+		display: none;
 	}
 	
 	.row, body, .container {
