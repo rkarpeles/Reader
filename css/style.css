@@ -107,7 +107,7 @@ sub { bottom: -0.25em; }
 
 ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
 dd { margin: 0 0 0 40px; }
-nav ul, nav ol, footer ul { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+nav ul, nav li, nav ol, footer ul { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 
 
 /* =============================================================================
@@ -392,20 +392,15 @@ NAVIGATION
 nav {
 	background: #2db5b5;
 	color: #fff;	
-	display: block;
-	position: relative;	
+	display: block;	
 	text-align: center;	
-}
-
-nav ul { 
-	float: left;
-	width: 100%;	
+	z-index: 5;
 }
 
 nav li {
 	display: inline-block;	
+	position: relative;	
 }
-
 
 nav li a {	
 	color: #fff;
@@ -418,9 +413,25 @@ nav li a {
 	-moz-transition: all 0.15s ease-in-out;	
 }
 
-nav li a:hover {
+nav li:hover a {
 	background-color: #f7f7f7;
 	color: #2db5b5;	
+}
+
+nav ul ul {
+	background: #f7f7f7;
+	position: absolute;
+	left: -9999px;
+}
+
+nav ul ul a {
+	color: #2db5b5;
+}
+
+nav li:hover ul {
+	left:0;
+	display: block;
+	
 }
 
 
