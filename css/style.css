@@ -32,7 +32,7 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+html, button, input, select, textarea { font-family: sans-serif; color: #666; }
 
 body { margin: 0; font-size: 1em; line-height: 1.4; }
 
@@ -70,6 +70,27 @@ a:hover, a:active { outline: 0; }
    Typography
    ========================================================================== */
 
+h1 {
+	font-family: 'Lora', Georgia, serif;
+	color: #b66f2d;
+	font-size: 2.25em;
+}
+
+.mega {
+	font-size: 3.5em;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 1.2;	
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.defaultItalic {
+	font-weight: 400;
+	font-style: italic;
+}
+   
+   
 abbr[title] { border-bottom: 1px dotted; }
 
 b, strong { font-weight: bold; }
@@ -253,6 +274,15 @@ body {
 	background: #fff url(../img/bg-dots.png) repeat;	 
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	color: #666;
+}
+
+img {
+	background: #fff;
+	padding: 5px;
+	margin: 5px;
+	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);	
 }
 
 /*===========================
