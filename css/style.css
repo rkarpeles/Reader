@@ -54,9 +54,9 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
 a { 
 	color: #2db5b5; 
 	text-decoration: none;
-	transition: all 0.18s ease-in-out;
-	-webkit-transition: all 0.18s ease-in-out; 
-	-moz-transition: all 0.18s ease-in-out;	
+	transition: all 0.15s ease-in-out;
+	-webkit-transition: all 0.15s ease-in-out; 
+	-moz-transition: all 0.15s ease-in-out;	
 }
 
 a:hover { text-decoration: none; }
@@ -329,16 +329,17 @@ CUSTOM STYLES
 	-webkit-box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
 	-moz-box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
 	box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
+	-webkit-transition: all 0.25s ease-in-out; 
+	-moz-transition: all 0.25s ease-in-out;		
+	transition: all 0.25s ease-out;
 }
 
 
 .tab:hover {
 	background: #2db5b5;
 	cursor: pointer;	
-	text-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
-	-webkit-transition: all 0.25s ease-in-out; 
-	-moz-transition: all 0.25s ease-in-out;		
-	transition: all 0.25s ease-out;
+	padding-right: 45px;
+	text-shadow: 0 0 2px rgba(255, 255, 255, 0.2);	
 }
 
 /*===========================
