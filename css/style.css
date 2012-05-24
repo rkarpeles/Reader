@@ -407,26 +407,44 @@ nav li a {
 	background: none;
 	padding: 20px 30px;
 	display: block;
-	position: relative;
-	transition: all 0.15s ease-in-out;
+	position: relative;	
 	-webkit-transition: all 0.15s ease-in-out; 
 	-moz-transition: all 0.15s ease-in-out;	
+	transition: all 0.15s ease-in-out;
 }
 
 nav li:hover a {
 	background-color: #f7f7f7;
-	color: #2db5b5;	
+	color: #2db5b5;			
 }
 
 nav ul ul {
 	background: #f7f7f7;
 	position: absolute;
 	left: -9999px;
+	z-index: 2;	
+	border-left: 1px dotted #dcdcdc;
+	border-right: 1px dotted #dcdcdc;
+}
+
+nav ul ul li {
+	background: #fff;
 }
 
 nav ul ul a {
 	color: #2db5b5;
+	padding: 10px 30px;
+	width: 175px;
+	text-align: left;	
+	border-bottom: 1px dotted #dcdcdc;
 }
+
+nav ul ul a:hover {
+	color: #bd2c66;
+}
+
+
+
 
 nav li:hover ul {
 	left:0;
