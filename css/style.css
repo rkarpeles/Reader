@@ -390,8 +390,7 @@ NAVIGATION
 ===========================*/
 
 nav {
-	background: #2db5b5;
-	color: #fff;	
+	background: #2db5b5;		
 	display: block;	
 	text-align: center;	
 	z-index: 5;
@@ -419,34 +418,49 @@ nav li:hover a {
 }
 
 nav ul ul {
-	background: #f7f7f7;
 	position: absolute;
+	background-color: #f7f7f7;
 	left: -9999px;
-	z-index: 2;	
-	border-left: 1px dotted #dcdcdc;
-	border-right: 1px dotted #dcdcdc;
-}
-
-nav ul ul li {
-	background: #fff;
+	z-index: 2;
+	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 nav ul ul a {
 	color: #2db5b5;
 	padding: 10px 30px;
 	width: 175px;
-	text-align: left;	
+	text-align: left;		
+}
+
+nav ul ul li {
 	border-bottom: 1px dotted #dcdcdc;
 }
+
+nav ul ul li:last-child {
+	border-bottom: none;
+}
+
 
 nav ul ul a:hover {
 	color: #bd2c66;
 }
 
 
-
-
 nav li:hover ul {
+	left:0;
+	display: block;	
+}
+
+.navColumn {
+	position: absolute;	
+	left: -9999px;
+	width: 474px;
+	text-align: left;
+}
+
+nav li:hover .navColumn {
 	left:0;
 	display: block;	
 }
@@ -612,6 +626,10 @@ img {
 	nav li:first-child {
 		display:none; 
 	}
+	
+	nav ul ul li:first-child {
+		display:inline-block;
+	}
 		
 	nav li a {
 		padding: 20px 12px;				
@@ -666,6 +684,10 @@ img {
 	
 	nav li a {
 		padding: 10px 20px;
+	}
+	
+	nav li:hover ul {
+		display: none;	
 	}
 	
 	.callout {
