@@ -442,11 +442,9 @@ nav ul ul li:last-child {
 	border-bottom: none;
 }
 
-
 nav ul ul a:hover {
-	color: #bd2c66;
+	color: #bd2c66;	
 }
-
 
 nav li:hover ul {
 	left:0;
