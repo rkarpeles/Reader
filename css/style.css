@@ -106,6 +106,7 @@ sub { bottom: -0.25em; }
    ========================================================================== */
 
 ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+li { padding: 0 0 4px; }
 dd { margin: 0 0 0 40px; }
 nav ul, nav li, nav ol, footer ul { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 
@@ -518,6 +519,60 @@ CUSTOM STYLES
 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
 }
 
+.apptButton {
+	background: #bd2c66;
+	cursor: pointer;
+	color: #fff;
+	text-align: center;
+	padding: 12px 20px;
+	font-size: 1.4em;	
+	margin-top: 17px;
+	letter-spacing: 0.5px;
+	-webkit-transition: all 0.25s ease-in-out; 
+	-moz-transition: all 0.25s ease-in-out;		
+	transition: all 0.25s ease-out;
+}
+
+.apptButton:hover {
+	background: #2db5b5;
+}
+
+/* Icon List on Homepage */
+
+#iconListOne {
+	margin: 1em 0 0;
+}
+
+#visit {
+	background: url(../img/visit-icon.png) 5px 0 no-repeat;
+	padding: 4px 0 11px 48px;
+	height: 30px;	
+}
+
+#billing {
+	background: url(../img/billing-icon.png) 2px 0 no-repeat;
+	padding: 4px 0 11px 48px;
+	height: 30px;	
+}
+
+#insurance {
+	background: url(../img/insurance-icon.png) 2px 2px no-repeat;
+	padding: 4px 0 11px 48px;
+	height: 30px;	
+}
+
+#office {
+	background: url(../img/office-icon.png) 0 3px no-repeat;
+	padding: 4px 0 11px 48px;;
+	height: 30px;	
+}
+
+#words {
+	background: url(../img/words-icon.png) 2px 0 no-repeat;
+	padding: 4px 0 11px 48px;
+	height: 30px;	
+}
+
 /*===========================
 FOOTER 
 ===========================*/
@@ -525,14 +580,19 @@ FOOTER
 footer {
 	background: #2db5b5;
 	color: #fff;
-	font-size: 0.9em;
-	padding-bottom: 20px;
+	font-size: 0.9em;	
+	padding-bottom: 35px;
 	margin-top: 2em;
+	padding-top: 5px;
 }
 
 .footerStrong {
 	font-size: 1.1em;
 	font-weight: bold;
+}
+
+footer li {
+	padding: 0;
 }
 
 /* ==================================================================================================================== */
@@ -772,6 +832,11 @@ img {
 	
 	.callout {
 		display: none;
+	}
+	
+	.apptButton {
+		font-size: 1.25em;
+		padding: 8px;
 	}
 	
 		
