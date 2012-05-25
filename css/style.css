@@ -78,7 +78,7 @@ blockquote { margin: 1em 40px; }
 
 dfn { font-style: italic; }
 
-hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px dotted #e0e0e0; margin: 1.75em 0 0; padding: 0; }
 
 ins { background: #ff9; color: #000; text-decoration: none; }
 
@@ -264,6 +264,13 @@ img {
 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);	
 }
 
+.horRule {
+	height:1px;
+	border-bottom: 1px dotted #e0e0e0;	
+}
+
+
+
 /*===========================
 TYPE
 ===========================*/
@@ -273,6 +280,13 @@ h1 {
 	font-family: 'Lora', Georgia, serif;
 	color: #b66f2d;
 	font-size: 2.25em;
+}
+
+h2 {
+	font-family: 'Lora', Georgia, serif;
+	font-size: 1.7em;
+	margin-bottom: 0em;
+	color: #46a167;
 }
 
 .mega {
@@ -287,59 +301,6 @@ h1 {
 .defaultItalic {
 	font-weight: 400;
 	font-style: italic;
-}
-
-
-
-/*===========================
-CUSTOM STYLES
-===========================*/
-
-.callout {
-	background: #fff;	
-	max-width: 96%;
-	max-height: 343px;	
-	margin: 2%;		
-	font-size: 1.2em;
-	line-height: 1.5;
-	padding: 10px 40px;
-	color: #b66f2d;
-	font-family: 'Lato', Helvetica, Arial, sans-serif;
-	font-style: italic;
-	-webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
-}
-
-.tabBox {
-	position: relative;
-}
-
-
-.tabOne {
-	z-index: 100;
-	background: #bd2c66;
-	opacity: 0.9;
-	padding: 10px 32px;
-	color: #fff;	
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-	position: absolute;
-	top: 78%;
-	right: 2.25%;
-	-webkit-box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
-	-moz-box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
-	box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
-	-webkit-transition: all 0.25s ease-in-out; 
-	-moz-transition: all 0.25s ease-in-out;		
-	transition: all 0.25s ease-out;
-}
-
-
-.tabOne:hover {
-	background: #2db5b5;
-	cursor: pointer;	
-	padding-right: 45px;
-	text-shadow: 0 0 2px rgba(255, 255, 255, 0.2);	
 }
 
 /*===========================
@@ -463,6 +424,68 @@ nav li:hover .navColumn {
 	display: block;	
 }
 
+/*===========================
+CUSTOM STYLES
+===========================*/
+
+.callout {
+	background: #fff;	
+	max-width: 96%;
+	max-height: 343px;	
+	margin: 2%;		
+	font-size: 1.2em;
+	line-height: 1.5;
+	padding: 10px 40px;
+	color: #b66f2d;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-style: italic;
+	-webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabBox {
+	position: relative;
+}
+
+
+.tabOne {
+	z-index: 100;
+	background: #bd2c66;
+	opacity: 0.9;
+	padding: 10px 32px;
+	color: #fff;	
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	position: absolute;
+	top: 78%;
+	right: 2.25%;
+	-webkit-box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
+	box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
+	-webkit-transition: all 0.25s ease-in-out; 
+	-moz-transition: all 0.25s ease-in-out;		
+	transition: all 0.25s ease-out;
+}
+
+
+.tabOne:hover {
+	background: #2db5b5;
+	cursor: pointer;	
+	padding-right: 45px;
+	text-shadow: 0 0 2px rgba(255, 255, 255, 0.2);	
+}
+
+#headshot {
+	background: url(../img/stock-doc.jpg) 0 0 no-repeat;
+	margin: 0.5% 20px 10px 1%;
+	height: 119px;
+	width: 119px;
+	border: 5px solid #fff;
+	float: left;
+	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
 
 /*===========================
 FOOTER 
@@ -473,14 +496,13 @@ footer {
 	color: #fff;
 	font-size: 0.9em;
 	padding-bottom: 20px;
+	margin-top: 2em;
 }
 
 .footerStrong {
 	font-size: 1.1em;
 	font-weight: bold;
 }
-
-
 
 /* ==================================================================================================================== */
 /* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
@@ -616,6 +638,14 @@ img {
 		font-size: 0.9em;		
 	}	
 	
+	h1 {
+		font-size: 2em;
+	}
+	
+	h2 {
+		font-size: 1.5em;
+	}
+	
 	.mega {
 	font-size: 3.4em;	
 	}
@@ -631,7 +661,11 @@ img {
 		
 	nav li a {
 		padding: 20px 12px;				
-	}	
+	}
+
+	.tabOne:hover {	
+		padding-right: none;
+	}
 	
 	
 	}
@@ -645,6 +679,11 @@ img {
 
 	body {
 	-webkit-text-size-adjust: none;
+	}
+	
+	hr {
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 	
 	.mega {
@@ -691,6 +730,14 @@ img {
 	.callout {
 		display: none;
 	}
+	
+	#headshot {		
+		background: url(../img/stock-doc-small.jpg) 0 0 no-repeat;
+		height: 85px;
+		width: 85px;
+	}
+	
+
 	
 /* ========================
 RESPONSIVE COLUMNS
