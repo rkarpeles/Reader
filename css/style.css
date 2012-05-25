@@ -59,7 +59,7 @@ a {
 	-moz-transition: all 0.15s ease-in-out;	
 }
 
-a:hover { text-decoration: none; }
+a:hover { text-decoration: none; color: #bd2c66; }
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -448,6 +448,10 @@ CUSTOM STYLES
 	position: relative;
 }
 
+.tabBoxTwo {
+	position: relative;
+	max-width: 547px;
+}
 
 .tabOne {
 	z-index: 100;
@@ -474,6 +478,33 @@ CUSTOM STYLES
 	padding-right: 45px;
 	text-shadow: 0 0 2px rgba(255, 255, 255, 0.2);	
 }
+
+.tabTwo {
+	z-index: 100;
+	font-size: 0.9em;
+	background: #46a167;
+	opacity: 0.9;
+	padding: 7px 18px;
+	color: #fff;	
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	position: absolute;
+	top: 71%;
+	right: 2.25%;
+	-webkit-box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
+	box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
+	-webkit-transition: all 0.25s ease-in-out; 
+	-moz-transition: all 0.25s ease-in-out;		
+	transition: all 0.25s ease-out;
+}
+
+.tabTwo:hover {
+	background: #2db5b5;
+	padding-right: 25px;
+	cursor: pointer;	
+	text-shadow: 0 0 2px rgba(255, 255, 255, 0.2);	
+}
+
 
 #headshot {
 	background: url(../img/stock-doc.jpg) 0 0 no-repeat;
@@ -598,6 +629,10 @@ img {
 		padding: 20px;		
 	}
 	
+	.tabTwo {
+		right: 2.4%;
+	}
+	
 	}
 	
 	
@@ -627,6 +662,8 @@ img {
 		padding: 5px 30px;
 		line-height: 1.4;
 	}
+	
+	
 
 			
 	
@@ -665,6 +702,12 @@ img {
 
 	.tabOne:hover {	
 		padding-right: none;
+	}
+	
+	#headshot {		
+		background: url(../img/stock-doc-med.jpg) 0 0 no-repeat;
+		height: 100px;
+		width: 100px;
 	}
 	
 	
@@ -731,14 +774,7 @@ img {
 		display: none;
 	}
 	
-	#headshot {		
-		background: url(../img/stock-doc-small.jpg) 0 0 no-repeat;
-		height: 85px;
-		width: 85px;
-	}
-	
-
-	
+		
 /* ========================
 RESPONSIVE COLUMNS
 =========================*/
@@ -783,6 +819,17 @@ RESPONSIVE COLUMNS
 		padding: 5px 15px;
 		top: 75%;
 		right: 2.5%;
+	}
+	
+	.tabTwo {
+		top: 68%;
+		padding: 4px 10px;
+	}
+	
+	#headshot {		
+		background: url(../img/stock-doc-small.jpg) 0 0 no-repeat;
+		height: 85px;
+		width: 85px;
 	}
 	
 		
