@@ -32,7 +32,7 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-html, button, input, select, textarea { font-family: 'Lato', Helvetica, Arial, sans-serif; color: #666; }
+html, button, input, select, textarea { font-family: sans-serif; color: #666; }
 
 body { margin: 0; font-size: 1em; line-height: 1.4; }
 
@@ -59,7 +59,7 @@ a {
 	-moz-transition: all 0.15s ease-in-out;	
 }
 
-a:hover { text-decoration: none; color: #bd2c66; }
+a:hover { text-decoration: none; }
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -78,9 +78,7 @@ blockquote { margin: 1em 40px; }
 
 dfn { font-style: italic; }
 
-hr { display: block; height: 1px; border: 0; border-top: 1px dotted #e0e0e0; margin: 1.75em 0 0; padding: 0; }
-
-hr.int { margin: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 
 ins { background: #ff9; color: #000; text-decoration: none; }
 
@@ -108,7 +106,6 @@ sub { bottom: -0.25em; }
    ========================================================================== */
 
 ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
-li { padding: 0 0 4px; }
 dd { margin: 0 0 0 40px; }
 nav ul, nav li, nav ol, footer ul { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 
@@ -146,7 +143,7 @@ form { margin: 0; }
 fieldset { border: 0; margin: 0; padding: 0; }
 
 /* Indicate that 'label' will shift focus to the associated form element */
-label { cursor: pointer; display: block; }
+label { cursor: pointer; }
 
 /*
  * 1. Correct color not inheriting in IE6/7/8/9
@@ -267,13 +264,6 @@ img {
 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);	
 }
 
-.horRule {
-	height:1px;
-	border-bottom: 1px dotted #e0e0e0;	
-}
-
-
-
 /*===========================
 TYPE
 ===========================*/
@@ -283,14 +273,6 @@ h1 {
 	font-family: 'Lora', Georgia, serif;
 	color: #b66f2d;
 	font-size: 2.25em;
-	margin-bottom: 15px;
-}
-
-h2 {
-	font-family: 'Lora', Georgia, serif;
-	font-size: 1.7em;
-	margin-bottom: 0em;
-	color: #46a167;
 }
 
 .mega {
@@ -305,6 +287,59 @@ h2 {
 .defaultItalic {
 	font-weight: 400;
 	font-style: italic;
+}
+
+
+
+/*===========================
+CUSTOM STYLES
+===========================*/
+
+.callout {
+	background: #fff;	
+	max-width: 96%;
+	max-height: 343px;	
+	margin: 2%;		
+	font-size: 1.2em;
+	line-height: 1.5;
+	padding: 10px 40px;
+	color: #b66f2d;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-style: italic;
+	-webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabBox {
+	position: relative;
+}
+
+
+.tabOne {
+	z-index: 100;
+	background: #bd2c66;
+	opacity: 0.9;
+	padding: 10px 32px;
+	color: #fff;	
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	position: absolute;
+	top: 78%;
+	right: 2.25%;
+	-webkit-box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
+	box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
+	-webkit-transition: all 0.25s ease-in-out; 
+	-moz-transition: all 0.25s ease-in-out;		
+	transition: all 0.25s ease-out;
+}
+
+
+.tabOne:hover {
+	background: #2db5b5;
+	cursor: pointer;	
+	padding-right: 45px;
+	text-shadow: 0 0 2px rgba(255, 255, 255, 0.2);	
 }
 
 /*===========================
@@ -355,7 +390,8 @@ NAVIGATION
 ===========================*/
 
 nav {
-	background: #2db5b5;		
+	background: #2db5b5;
+	color: #fff;	
 	display: block;	
 	text-align: center;	
 	z-index: 5;
@@ -371,242 +407,33 @@ nav li a {
 	background: none;
 	padding: 20px 30px;
 	display: block;
-	position: relative;	
+	position: relative;
+	transition: all 0.15s ease-in-out;
 	-webkit-transition: all 0.15s ease-in-out; 
 	-moz-transition: all 0.15s ease-in-out;	
-	transition: all 0.15s ease-in-out;
 }
 
 nav li:hover a {
 	background-color: #f7f7f7;
-	color: #2db5b5;			
+	color: #2db5b5;	
 }
 
 nav ul ul {
+	background: #f7f7f7;
 	position: absolute;
-	background-color: #f7f7f7;
 	left: -9999px;
-	z-index: 500;	
-	border-left: 1px dotted #dcdcdc;
-	border-right: 1px dotted #dcdcdc;
-	-webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.04);
-	-moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.04);
-	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.04);
 }
 
 nav ul ul a {
 	color: #2db5b5;
-	padding: 10px 30px;
-	width: 175px;
-	text-align: left;		
-}
-
-nav ul ul li {
-	border-bottom: 1px dotted #dcdcdc;
-}
-
-
-nav ul ul a:hover {
-	color: #bd2c66;	
 }
 
 nav li:hover ul {
 	left:0;
-	display: block;	
+	display: block;
+	
 }
 
-.navColumn {
-	position: absolute;	
-	left: -9999px;
-	width: 476px;
-	text-align: left;
-}
-
-nav li:hover .navColumn {
-	left:0;
-	display: block;	
-}
-
-/*===========================
-CUSTOM STYLES
-===========================*/
-
-.callout {
-	background: #fff;	
-	max-width: 96%;
-	max-height: 343px;	
-	margin: 2%;		
-	font-size: 1.2em;
-	line-height: 1.5;
-	padding: 10px 40px;
-	color: #b66f2d;
-	font-family: 'Lato', Helvetica, Arial, sans-serif;
-	font-style: italic;
-	-webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
-}
-
-.tabBox {
-	position: relative;
-}
-
-.tabBoxTwo {
-	position: relative;
-	max-width: 547px;
-}
-
-.tabOne {
-	z-index: 100;
-	background: #bd2c66;
-	opacity: 0.9;
-	padding: 10px 32px;
-	color: #fff;	
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-	position: absolute;
-	top: 78%;
-	right: 2.25%;
-	-webkit-box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
-	-moz-box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
-	box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
-	-webkit-transition: all 0.25s ease-in-out; 
-	-moz-transition: all 0.25s ease-in-out;		
-	transition: all 0.25s ease-out;
-}
-
-
-.tabOne:hover {
-	background: #2db5b5;
-	cursor: pointer;	
-	padding-right: 45px;
-	text-shadow: 0 0 2px rgba(255, 255, 255, 0.2);	
-}
-
-.tabTwo {
-	z-index: 100;
-	font-size: 0.9em;
-	background: #46a167;
-	opacity: 0.9;
-	padding: 7px 18px;
-	color: #fff;	
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-	position: absolute;
-	top: 71%;
-	right: 2.25%;
-	-webkit-box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
-	-moz-box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
-	box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.35);
-	-webkit-transition: all 0.25s ease-in-out; 
-	-moz-transition: all 0.25s ease-in-out;		
-	transition: all 0.25s ease-out;
-}
-
-.tabTwo:hover {
-	background: #2db5b5;
-	padding-right: 25px;
-	cursor: pointer;	
-	text-shadow: 0 0 2px rgba(255, 255, 255, 0.2);	
-}
-
-
-#headshot {
-	background: url(../img/stock-doc.jpg) 0 0 no-repeat;
-	margin: 0.5% 20px 10px 1%;
-	height: 119px;
-	width: 119px;
-	border: 5px solid #fff;
-	float: left;
-	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-}
-
-.apptButton {
-	background: #bd2c66;
-	cursor: pointer;
-	color: #fff;
-	text-align: center;
-	padding: 12px 20px;
-	font-size: 1.4em;	
-	margin-top: 17px;
-	letter-spacing: 0.5px;
-	-webkit-transition: all 0.25s ease-in-out; 
-	-moz-transition: all 0.25s ease-in-out;		
-	transition: all 0.25s ease-out;
-}
-
-.apptButton:hover {
-	background: #2db5b5;
-}
-
-/* Icon List on Homepage */
-
-#iconListOne {
-	margin: 1em 0 0;
-}
-
-#visit {
-	background: url(../img/visit-icon.png) 5px 0 no-repeat;
-	padding: 4px 0 11px 48px;
-	height: 30px;	
-}
-
-#billing {
-	background: url(../img/billing-icon.png) 2px 0 no-repeat;
-	padding: 4px 0 11px 48px;
-	height: 30px;	
-}
-
-#insurance {
-	background: url(../img/insurance-icon.png) 2px 2px no-repeat;
-	padding: 4px 0 11px 48px;
-	height: 30px;	
-}
-
-#office {
-	background: url(../img/office-icon.png) 0 3px no-repeat;
-	padding: 4px 0 11px 48px;
-	height: 30px;	
-}
-
-#words {
-	background: url(../img/words-icon.png) 2px 0 no-repeat;
-	padding: 4px 0 11px 48px;
-	height: 30px;	
-}
-
-/*===========================
-FORMS
-===========================*/
-
-.form-input {
-	margin-bottom: 15px;
-}
-
-.int-form {
-	margin: 10px 0 15px;
-	background: #fcfcfc;
-}
-
-label {
-	margin: 0% 7%;
-}
-
-input, textarea {
-	width: 84%;
-	padding: 2px;
-	margin: 0% 7%;
-}
-
-.sidebar-form {
-	background: #fff;
-	width: 96%;		
-	padding: 1%;
-	margin: 1%;	
-	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-}
 
 /*===========================
 FOOTER 
@@ -615,22 +442,8 @@ FOOTER
 footer {
 	background: #2db5b5;
 	color: #fff;
-	font-size: 0.9em;	
-	padding-bottom: 35px;
-	margin-top: 2em;
-	padding-top: 5px;
-}
-
-footer a {
-	color: #fff;
-	-webkit-transition: all 0.1s ease-in-out; 
-	-moz-transition: all 0.1s ease-in-out;		
-	transition: all 0.1s ease-in-out;
-}
-
-footer a:hover {
-	border-bottom: 1px solid #fff;
-	color: #fff;
+	font-size: 0.9em;
+	padding-bottom: 20px;
 }
 
 .footerStrong {
@@ -638,9 +451,7 @@ footer a:hover {
 	font-weight: bold;
 }
 
-footer li {
-	padding: 0;
-}
+
 
 /* ==================================================================================================================== */
 /* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
@@ -736,10 +547,6 @@ img {
 		padding: 20px;		
 	}
 	
-	.tabTwo {
-		right: 2.4%;
-	}
-	
 	}
 	
 	
@@ -769,8 +576,6 @@ img {
 		padding: 5px 30px;
 		line-height: 1.4;
 	}
-	
-	
 
 			
 	
@@ -782,14 +587,6 @@ img {
 		font-size: 0.9em;		
 	}	
 	
-	h1 {
-		font-size: 2em;
-	}
-	
-	h2 {
-		font-size: 1.5em;
-	}
-	
 	.mega {
 	font-size: 3.4em;	
 	}
@@ -798,24 +595,10 @@ img {
 	nav li:first-child {
 		display:none; 
 	}
-	
-	nav ul ul li:first-child {
-		display:inline-block;
-	}
 		
 	nav li a {
 		padding: 20px 12px;				
-	}
-
-	.tabOne:hover {	
-		padding-right: none;
-	}
-	
-	#headshot {		
-		background: url(../img/stock-doc-med.jpg) 0 0 no-repeat;
-		height: 100px;
-		width: 100px;
-	}
+	}	
 	
 	
 	}
@@ -829,11 +612,6 @@ img {
 
 	body {
 	-webkit-text-size-adjust: none;
-	}
-	
-	hr {
-		margin-left: 20px;
-		margin-right: 20px;
 	}
 	
 	.mega {
@@ -873,20 +651,10 @@ img {
 		padding: 10px 20px;
 	}
 	
-	nav li:hover ul {
-		display: none;	
-	}
-	
 	.callout {
 		display: none;
 	}
 	
-	.apptButton {
-		font-size: 1.25em;
-		padding: 8px;
-	}
-	
-		
 /* ========================
 RESPONSIVE COLUMNS
 =========================*/
@@ -931,17 +699,6 @@ RESPONSIVE COLUMNS
 		padding: 5px 15px;
 		top: 75%;
 		right: 2.5%;
-	}
-	
-	.tabTwo {
-		top: 68%;
-		padding: 4px 10px;
-	}
-	
-	#headshot {		
-		background: url(../img/stock-doc-small.jpg) 0 0 no-repeat;
-		height: 85px;
-		width: 85px;
 	}
 	
 		
