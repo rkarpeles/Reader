@@ -579,12 +579,35 @@ CUSTOM STYLES
 FORMS
 ===========================*/
 
+.sidebar-form {
+	background: #fff;
+	width: 96.4%;		
+	padding: 1.8%;
+	margin: 20px 0;	
+	position: relative;
+	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.form-header {
+	background: #bd2c66;
+	color: #fff;
+	padding: 12px 9%;
+	font-size: 1.1em;
+	position: absolute;
+	z-index: 20;
+	right: -1px;
+	left: -1px;
+	top: 0;
+}
+
 .form-input {
 	margin-bottom: 15px;
 }
 
 .int-form {
-	margin: 10px 0 15px;
+	padding: 60px 0 15px;
 	background: #fcfcfc;
 }
 
@@ -594,19 +617,27 @@ label {
 
 input, textarea {
 	width: 84%;
-	padding: 2px;
+	padding: 3px 2px;
 	margin: 0% 7%;
+	border: 1px solid #ececec;
 }
 
-.sidebar-form {
-	background: #fff;
-	width: 96%;		
-	padding: 1%;
-	margin: 1%;	
-	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+.appt-btn {
+	width: 35%;
+	background: #2db5b5;
+	text-align: center;
+	color: #fff;
+	padding: 9px 0;
+	-webkit-transition: all 0.25s ease-in-out; 
+	-moz-transition: all 0.25s ease-in-out;		
+	transition: all 0.25s ease-out;	
 }
+
+.appt-btn:hover {
+	background: #bd2c66;
+}
+
+
 
 /*===========================
 FOOTER 
