@@ -617,9 +617,17 @@ label {
 
 input, textarea {
 	width: 84%;
-	padding: 3px 2px;
+	padding: 4px;
 	margin: 0% 7%;
 	border: 1px solid #ececec;
+	-webkit-transition: all 0.2s ease-in-out; 
+	-moz-transition: all 0.2s ease-in-out;		
+	transition: all 0.2s ease-out;	
+}
+
+input:focus, textarea:focus { 
+	background: #f8f8f8;
+	outline: none;	
 }
 
 .appt-btn {
