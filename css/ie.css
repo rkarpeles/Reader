@@ -2,9 +2,15 @@
 Main
 ======================================*/
 
-img, callout, .sidebar-form {
+img, .callout, .sidebar-form {
 	outline: 1px solid #eaeaea;
 }
+
+.tabOne { right: 2%; }
+
+.tabOne:hover { padding-right: 32px; }
+
+.tabTwo:hover { padding-right: 18px; }
 
 /*======================================
 Columns

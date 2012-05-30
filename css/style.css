@@ -626,7 +626,8 @@ input, textarea {
 }
 
 input:focus, textarea:focus { 
-	background: #f8f8f8;
+	background: #f9f9f9;
+	border: 1px solid #dedede;
 	outline: none;	
 }
 
