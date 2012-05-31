@@ -431,7 +431,7 @@ nav li:hover .navColumn {
 CUSTOM STYLES
 ===========================*/
 
-.callout {
+.quote {
 	background: #fff;	
 	max-width: 96%;
 	max-height: 343px;	
@@ -538,6 +538,7 @@ CUSTOM STYLES
 .apptButton:hover {
 	background: #2db5b5;
 }
+
 
 /* Icon List on Homepage */
 
@@ -820,7 +821,7 @@ img {
 		padding: 20px;	
 	}
 	
-	.callout {
+	.quote {
 		font-size: 1.1em;
 		padding: 5px 30px;
 		line-height: 1.4;
@@ -933,7 +934,7 @@ img {
 		display: none;	
 	}
 	
-	.callout {
+	.quote {
 		display: none;
 	}
 	

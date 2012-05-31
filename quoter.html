@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Simplest jQuery Slideshow</title>
+
+<style>
+body {font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+
+.fadein { position:relative; height:332px; width:500px; }
+.fadein .quote { position:absolute; left:0; top:0; }
+</style>
+
+
+
+
+</head>
+<body>
+<h1>Simplest jQuery Slideshow</h1>
+<p>Check out the <a href="/archives/javascript/simplest-jquery-slideshow">blog post</a>.</p>
+<div class="fadein">
+    <div class="quote">Content uno</div>
+    <div class="quote">Content dos</div>
+    <div class="quote">Content tres</div>
+</div>
+
+<!-- JavaScript at the bottom for fast page loading -->
+  
+ 
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+  
+  
+  <script>
+$(function(){
+    $('.fadein .quote:gt(0)').hide();
+    setInterval(function(){$('.fadein :first-child').fadeOut().next('.quote').fadeIn().end().appendTo('.fadein');}, 3000);
+});
+</script>
+
+  <!-- scripts concatenated and minified via build script -->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>
