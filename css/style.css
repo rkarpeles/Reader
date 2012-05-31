@@ -542,6 +542,11 @@ CUSTOM STYLES
 	background: #2db5b5;
 }
 
+#mobile-address {
+	display: none;
+	margin-bottom: 20px;
+}
+
 
 /* Icon List on Homepage */
 
@@ -931,7 +936,7 @@ img {
 	}
 	
 	nav li a {
-		padding: 10px 20px;
+		padding: 12px 20px;
 	}
 	
 	nav li:hover ul {
@@ -947,11 +952,7 @@ img {
 	margin-top: 15px;
 	margin-bottom: 15px;
 	text-align: left;
-	}
-	
-	.tabBox {
-		
-	}
+	}	
 	
 	.tabOne {
 		max-width: 200px;
@@ -983,6 +984,10 @@ img {
 	
 	.tabTwo:hover {
 		padding-right: 15px;
+	}
+	
+	#mobile-address { 
+		display: block;
 	}
 	
 	.apptButton {
