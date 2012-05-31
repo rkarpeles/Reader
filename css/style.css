@@ -30,12 +30,15 @@ audio:not([controls]) { display: none; }
  * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
  */
 
-html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html { font-size: 100%; height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 html, button, input, select, textarea { font-family: 'Lato', Helvetica, Arial, sans-serif; color: #666; }
 
-body { margin: 0; font-size: 1em; line-height: 1.4; }
+body { margin: 0; height: 100%; font-size: 1em; line-height: 1.4; }
 
+#wrap { min-height: 100%; }
+
+#content { overflow:auto; padding-bottom: 180px;}
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -450,6 +453,10 @@ CUSTOM STYLES
 	transition: all 0.4s ease-out;	
 }
 
+.quote-text {
+	background-color: #fff;
+}
+
 .tabBox {
 	position: relative;
 }
@@ -662,12 +669,15 @@ FOOTER
 ===========================*/
 
 footer {
+	height: 135px;
 	background: #2db5b5;
 	color: #fff;
 	font-size: 0.9em;	
 	padding-bottom: 35px;
-	margin-top: 2em;
+	margin-top: -135px;
 	padding-top: 12px;
+	clear: both;
+	position: relative;
 }
 
 footer a {
@@ -1105,6 +1115,15 @@ RESPONSIVE COLUMNS
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
+
+/*Opera Fix for Sticky Footer*/
+body:before {
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
 
 
 

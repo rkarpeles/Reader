@@ -17,7 +17,7 @@ window.log = function f(){ log.history = log.history || []; log.history.push(arg
         rotaterator: function(options) {
  
             var defaults = {
-                fadeSpeed: 400,
+                fadeSpeed: 300,
                 pauseSpeed: 100,
 				child:null
             };
