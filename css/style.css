@@ -926,7 +926,9 @@ img {
 	}
 	
 	nav li {
-		width: 48%;
+		width: 50%;
+		float: left; 
+		background: #2db5b5;
 	}
 	
 	nav li a {
