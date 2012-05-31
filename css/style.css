@@ -896,11 +896,10 @@ img {
 		margin-right: 20px;
 	}
 	
-	.mega {
-	font-size: 2.8em;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	}
+	.no-mobile {
+		display:none;
+	}	
+		
 	
 	#headLogo a {
 		line-height: 1;
@@ -941,6 +940,49 @@ img {
 	
 	.quote {
 		display: none;
+	}
+	
+	.mega {
+	font-size: 2.8em;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: left;
+	}
+	
+	.tabBox {
+		
+	}
+	
+	.tabOne {
+		max-width: 200px;
+		margin-top: 5px;
+		padding: 10px 15px;
+		position: static;
+		top: 0%;
+		right: 0%;
+		-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+		-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+		box-shadow: 0 0 0 rgba(0, 0, 0, 0);		
+	}
+	
+	.tabOne:hover {
+		padding-right: 15px;
+	}
+	
+	.tabTwo {
+		max-width: 90px;
+		margin-top: 5px;
+		padding: 10px 15px;
+		position: static;
+		top: 0%;
+		right: 0%;
+		-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+		-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+		box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+	}
+	
+	.tabTwo:hover {
+		padding-right: 15px;
 	}
 	
 	.apptButton {
@@ -997,16 +1039,6 @@ RESPONSIVE COLUMNS
 	font-size: 2.2em;
 	}
 	
-	.tabOne {
-		padding: 5px 15px;
-		top: 75%;
-		right: 2.5%;
-	}
-	
-	.tabTwo {
-		top: 68%;
-		padding: 4px 10px;
-	}
 	
 	#headshot {		
 		background: url(../img/stock-doc-small.jpg) 0 0 no-repeat;
