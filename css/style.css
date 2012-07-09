@@ -1,4 +1,14 @@
 /*
+Theme Name: Friendly Dentist
+Theme URI: http://www.johnrreaderdds.com/
+Description: A custom theme designed exclusively for John R Reader DDS
+Version: 1.0
+Author: Ryan Karpeles
+Author URI: http://www.ryankarpeles.com/
+*/
+
+
+/*
  * HTML5 Boilerplate
  *
  * What follows is the result of much research on cross-browser styling.
@@ -36,7 +46,7 @@ html, button, input, select, textarea { font-family: 'Lato', Helvetica, Arial, s
 
 body { margin: 0; height: 100%; font-size: 1em; line-height: 1.4; }
 
-#wrap { min-height: 100%; }
+#wrapper { min-height: 100%; }
 
 #content { overflow:auto; padding-bottom: 180px;}
 
@@ -521,7 +531,7 @@ CUSTOM STYLES
 
 #headshot {
 	background: url(../img/stock-doc.jpg) 0 0 no-repeat;
-	margin: 0.5% 20px 10px 1%;
+	margin: 20px 20px 10px 1%;
 	height: 119px;
 	width: 119px;
 	border: 5px solid #fff;
@@ -590,6 +600,31 @@ CUSTOM STYLES
 	padding: 4px 0 11px 48px;
 	height: 30px;	
 }
+
+
+/*===========================
+CUSTOM WORDPRESS IMAGE STYLES 
+===========================*/
+
+/* blocked out for now
+
+.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignright {
+	float: right;
+	margin-left: 15px;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 15px;
+}
+
+*/
 
 /*===========================
 FORMS
